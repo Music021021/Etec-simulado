@@ -1,0 +1,154 @@
+<!DOCTYPE html
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Matematica</title>
+		
+		<style scoped>
+		
+		:root {
+		--fundo: #232323;
+		--texto: #fff;
+		--titulos: gray;
+		--button: aqua;
+		--questao: red;
+		
+		/* --- tamanhos --- */
+		
+		--font-size: 22px;
+		--border: 2px solid white;
+		--top: 25px;
+		--bottom: 25px;
+		--left: 25px;
+		--right: 25px;
+		}
+					
+		*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		user-select: none;
+		}	
+		
+		body{
+		font-family: poppins;
+		color: var(--texto);
+		background-color: var(--fundo);
+		}
+		
+		.container{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 100vh;
+		}
+		
+		.container h1{
+		margin-top: 50px;
+		font-size: var(--font-size);
+		text-transform: uppercase;
+		}
+		
+		.content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: var(--top);
+		text-transform: uppercase;
+		}
+		
+		.content h1{
+		color: var(--questao);
+		}
+		
+		.content h2{
+		font-size: 16px;
+		width: 350px;
+		margin-top: 10px;
+		}
+		
+		.content button{
+		background-color: transparent;
+		border: none;
+		color: var(--text);
+		height: 45px;
+		width: 200px;
+		font-size: 18px;
+		}
+		
+		.questao1A, .questao1B, .questao1C, .questao1D{
+		margin-top: 15px;
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 45px;
+		width: 200px;
+		border-radius: 15px;
+		}
+		</style>
+	</head>
+	
+		<body>
+			
+			<div class="container">
+			
+				<h1>Questoes de Matematicas
+				<br>OBMEP, ETEC, IFSP, etc...</h1>
+						
+				<div class="content">
+					
+					<h1>Questao 1</h1>
+					<h2>juros compostos
+					<br><br>um capital de 2.500 reais foi investido a juros compostos por 3anos, a uma taxa de 12 A.A Qual foi o montante gerado?</h2>
+					
+				<div class="questao1">	
+					
+					<p class="questao1A"><button id="questao1A">(A) 960,16reais</button></p>
+					<p class="questao1B"><button id="questao1B">(B) 1.012,32reais</button></p>
+					<p class="questao1C"><button id="questao1C">(C) 1.124,16reais</button></p>
+					<p class="questao1D"><button id="questao1D">(D) 1.436,32reais</button></p>
+					
+				</div>
+					
+				<div class="questao2">
+					
+					
+					
+				</div>
+																				
+				</div>
+				
+			</div>	
+			
+		</body>
+		
+		<script>
+			
+		var questao1A = document.getElementById('questao1A');
+		var questao1B = document.getElementById('questao1B');
+		var questao1C = document.getElementById('questao1C');
+		var questao1D = document.getElementById('questao1D');
+		
+		questao1A.addEventListener('click', () => {
+			document.querySelector('.questao1A').style.backgroundColor = 'red';
+		});
+		
+		questao1B.addEventListener('click', () => {
+			document.querySelector('.questao1B').style.backgroundColor = 'green';
+		});
+		
+		questao1C.addEventListener('click', () => {
+			document.querySelector('.questao1C').style.backgroundColor = 'red';
+		});
+		
+		questao1D.addEventListener('click', () => {
+			document.querySelector('.questao1D').style.backgroundColor = 'red';
+		});
+					
+		</script>
+	
+</html>
